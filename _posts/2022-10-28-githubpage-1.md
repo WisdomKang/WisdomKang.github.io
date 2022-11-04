@@ -2,7 +2,7 @@
 title : Github page 구성하기
 date : 2022-10-28 15:30:00 +0900
 categories : [ Github-pages ]
-tags : [ github-pages, ruby, jekyll ]
+tags : [ github-pages, ruby ]
 ---
 
 # Github-pages로 블로그 만들기
