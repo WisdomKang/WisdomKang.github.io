@@ -32,7 +32,7 @@ publisher가 메세지를 publish하면 중간에 exchange에 따라 queue에 �
 
 이 routing은 타입에 따라 여러방식으로 동작합니다. 간단하게만 적으면
 
-- direct : routing key 와 적확히 일치하는 queue에만 message routing
+- direct : routing key 와 정확히 일치하는 queue에만 message routing
 - fanout : routung key를 무시하고 message routing
 - topic : routing key를 topic 형식으로? 패턴일 일치하면 message routing
 - header : rounting key를 무시하고 header에 key-value 형식으로 패턴일치시 message routing
