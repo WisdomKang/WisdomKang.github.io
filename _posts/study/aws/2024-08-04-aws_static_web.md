@@ -54,8 +54,8 @@ html, js, css등 모든 파일을 읽어와야하기에 이런 설정이 필요�
 우측의 편집기를 사용하면 쉽게 추가가 가능합니다.
 서비스 S3 , Action GetObject, ARN S3 버킷의 ARN값을 선택하고 넣어주시면 됩니다.
 
-| ![policy_01](/assets/img/study/aws/01/policy_01.png) | ![policy_02](/assets/img/study/aws/01/policy_02.png) |
-| :--------------------------------------------------: | :--------------------------------------------------: |
+![policy_01](/assets/img/study/aws/01/policy_01.png){: style="float:left; padding:10px"}
+![policy_02](/assets/img/study/aws/01/policy_02.png){: style="float:left; padding:10px"}
 
 ![policy_03](/assets/img/study/aws/01/policy_03.jpg){: style="width 300px"}
 
