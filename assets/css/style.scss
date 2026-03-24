@@ -1,25 +1,28 @@
-/* 비디오를 16:9 비율로 유지하면서 꽉 차게 만드는 설정 */
+/* 비디오 컨테이너 */
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 비율 */
-    padding-top: 25px;
+    padding-bottom: 56.25%; /* 16:9 비율 유지 */
     height: 0;
-
-    width: 100%;           /* 기본적으로 너비 100% */
-    max-width: 720px;      /* [PC용] 영상의 최대 너비를 제한 (원하는 크기로 조절하세요) */
-    margin: 20px auto;     /* 위아래 여백을 주고, 가운데 정렬 */
-}
-.video-wrapper iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 0;
+    overflow: hidden;
+    max-width: 100%; /* 기본적으로 부모 너비에 맞춤 */
+    margin: 20px auto;
+    background: #000; /* 로딩 전 검은 배경 */
 }
 
-/* 모바일 환경 (화면 폭이 768px 이하일 때) */
-@media (max-width: 768px) {
+/* PC에서 너무 커지는 것을 방지하고 싶다면 컨테이너를 감싸는 div를 하나 더 쓰거나 아래처럼 제한 */
+@media (min-width: 1000px) {
     .video-wrapper {
-        max-width: 100%;   /* 모바일에서는 옆으로 꽉 차게 설정 */
-        margin: 10px 0;    /* 모바일에서는 좌우 여백 없이 상하 여백만 */
+        max-width: 850px; /* PC용 권장 최대 너비 */
     }
+}
+
+.video-wrapper iframe,
+.video-wrapper object,
+.video-wrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border: 0;
 }
